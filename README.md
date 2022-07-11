@@ -19,3 +19,5 @@ Compilers to automatically translate—within and—between:
  - TypeScript [cdd-ts-ng](https://github.com/offscale/cdd-ts-ng)
  - Rust [cdd-rust](https://github.com/offscale/cdd-rust)
  - Swift [cdd-swift](https://github.com/offscale/cdd-swift-ios)
+
+![SamuelMarks](https://github-readme-streak-stats.herokuapp.com/?user=SamuelMarks)

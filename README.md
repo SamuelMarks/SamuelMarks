@@ -1,6 +1,8 @@
 I write developer tools to speedup engineering of scalable software.
 
-#### Deploy at any scale
+![SamuelMarks](https://github-readme-streak-stats.herokuapp.com/?user=SamuelMarks)
+
+### Deploy at any scale
 *From one [e.g., embedded] device to 10,000 servers:*
  - [old] 59+ Python repos with ["off" prefix](https://github.com/offscale?q=off&language=python);
  - [new] C89 repo to create custom [very] cross-platform package managers: [libacquire](https://github.com/offscale/libacquire);
@@ -9,12 +11,12 @@ I write developer tools to speedup engineering of scalable software.
 | Purpose | Repo |
 | ------- | ---- |
 | Provision nodes specified in JSON, across 50+ clouds | [offstrategy](https://github.com/offscale/offstrategy) |
-| SSH into node provisioned by offstrategy | [offshell](https://github.com/offscale/offshell) |
-| Deprovision from cloud providers | [offswitch](https://github.com/offscale/offswitch) |
+| SSH into node provisioned by offstrategy\|offset | [offshell](https://github.com/offscale/offshell) |
+| Deprovision node provisioned by offstrategy\|offset from cloud providers | [offswitch](https://github.com/offscale/offswitch) |
 | Bring Your Own Node (BYON) [so can use ↕] | [offset](https://github.com/offscale/offset) |
-| Deploy any of [50 "offregister-" prefixed](https://github.com/orgs/offscale/repositories?q=offregister-&language=python) softwares—including clustered databases—to node provisioned by offstrategy (or offset) | [offregister](https://github.com/offscale/offregister) |
+| Deploy any of [50 "offregister-" prefixed](https://github.com/orgs/offscale/repositories?q=offregister-&language=python) softwares—including clustered databases—to nodes provisioned by offstrategy\|offset | [offregister](https://github.com/offscale/offregister) |
 
-**Competitive advantage**
+#### Competitive advantage
 
   - Support for more cloud vendors;
   - Uses normal Python packages deployable to PyPi, as opposed to Puppet/Chef/Ansible with their custom systems;
@@ -22,18 +24,18 @@ I write developer tools to speedup engineering of scalable software.
   - [WiP] Experiment with different versions of each package, including clustered variants.
 
 
-#### Multicloud
+### Multicloud
 *From one cloud vendor to many:*
  - [old] See aforementioned [Apache Libcloud](https://libcloud.apache.org) and [Fabric](https://fabfile.org) utilising Python repos;
  - [new] C89 [google-cloud-c](https://github.com/offscale/google-cloud-c) library (soon: auto-generate entire library, and other vendors);
  - [planned] autogenerate vendors other than Google Cloud.
 
-**Competitive advantage**
+#### Competitive advantage
 
   - [C89] Can be called from most any programming language and runs in all environments;
   - [planned] Build specific abstractions for multicloud, like: container-as-a-Service; ML-as-a-Service; Storage-as-a-Service; &etc.
 
-#### Multi-ML
+### Multi-ML
 *From one machine-learning framework to many:*
  - [old] Python repo from my first PhD: [ml-glaucoma](https://github.com/SamuelMarks/ml-glaucoma);
  - [new] 10+ Python repos with ["ml-params" prefix](https://github.com/SamuelMarks?tab=repositories&q=ml-params&language=python):
@@ -46,12 +48,12 @@ I write developer tools to speedup engineering of scalable software.
  | [trax](https://github.com/SamuelMarks/ml-params-trax) | [xgboost](https://github.com/SamuelMarks/ml-params-xgboost) |
  | [jax](https://github.com/SamuelMarks/ml-params-jax) | [cntk](https://github.com/SamuelMarks/ml-params-cntk) |
 
-**Competitive advantage**
+#### Competitive advantage
 
   - Keep up-to-date with latest innovations without porting to favourite framework;
   - Experiment with every model on all major Python ML frameworks.
 
-#### Native development, cross-platform, without tradeoffs
+### Native development, cross-platform, without tradeoffs
 
 Compilers to automatically translate—within and—between:
 
@@ -64,12 +66,8 @@ Compilers to automatically translate—within and—between:
 | TypeScript (Angular) | [cdd-ts-ng](https://github.com/offscale/cdd-ts-ng) |
 | Rust                 | [cdd-rust](https://github.com/offscale/cdd-rust) |
 
-**Competitive advantage**
+#### Competitive advantage
 
   - [intra-language] Automatically synchronise tests (& mocks), docs, types & interfaces;
   - [exolanguage] Translate changes across language boundaries;
   - Develop multi-language applications—e.g., Android, iOS, web, backend—as fast as single-language applications (compare with: Django or Ruby on Rails) and at a higher quality thanks to increased consistency, test coverage and doc coverage.
-
----
-
-![SamuelMarks](https://github-readme-streak-stats.herokuapp.com/?user=SamuelMarks)

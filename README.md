@@ -1,4 +1,4 @@
-I write developer tools to speedup engineering of scalable software.
+I write open-source developer tools to speedup engineering of scalable software. Foci on: cross-platform, multi-ML, multicloud, and compilers to translate across codebases.
 
 ![SamuelMarks](https://github-readme-streak-stats.herokuapp.com/?user=SamuelMarks)
 
@@ -8,12 +8,12 @@ I write developer tools to speedup engineering of scalable software.
  - [new] C89 repo to create custom [very] cross-platform package managers: [libacquire](https://github.com/offscale/libacquire);
  - [new] ["version_" prefix](https://github.com/offscale?q=version_&language=c) C89 repos that use libacquire to create [rvm](https://rvm.io)/[nvm](https://github.com/nvm-sh/nvm) style cross-platform package managers.
 
-| Purpose | Repo |
-| ------- | ---- |
-| Provision nodes specified in JSON, across 50+ clouds | [offstrategy](https://github.com/offscale/offstrategy) |
-| SSH into node provisioned by offstrategy\|offset | [offshell](https://github.com/offscale/offshell) |
-| Deprovision node provisioned by offstrategy\|offset from cloud providers | [offswitch](https://github.com/offscale/offswitch) |
-| Bring Your Own Node (BYON) [so can use ↕] | [offset](https://github.com/offscale/offset) |
+| Purpose                                                                  | Repo                                                   |
+| ------------------------------------------------------------------------ | ------------------------------------------------------ |
+| Provision nodes specified in JSON, across 50+ clouds                     | [offstrategy](https://github.com/offscale/offstrategy) |
+| SSH into node provisioned by offstrategy\|offset                         | [offshell](https://github.com/offscale/offshell)       |
+| Deprovision node provisioned by offstrategy\|offset from cloud providers | [offswitch](https://github.com/offscale/offswitch)     |
+| Bring Your Own Node (BYON) [so can use ↕]                                | [offset](https://github.com/offscale/offset)           |
 | Deploy any of [50 "offregister-" prefixed](https://github.com/orgs/offscale/repositories?q=offregister-&language=python) softwares—including clustered databases—to nodes provisioned by offstrategy\|offset | [offregister](https://github.com/offscale/offregister) |
 
 #### Competitive advantage
@@ -22,7 +22,6 @@ I write developer tools to speedup engineering of scalable software.
   - Uses normal Python packages deployable to PyPi, as opposed to Puppet/Chef/Ansible with their custom systems;
   - [WiP] Deploy to any operating system (cross-platform: SunOS, Windows, Linux, macOS, OpenBSD);
   - [WiP] Experiment with different versions of each package, including clustered variants.
-
 
 ### Multicloud
 *From one cloud vendor to many:*
@@ -40,13 +39,13 @@ I write developer tools to speedup engineering of scalable software.
  - [old] Python repo from my first PhD: [ml-glaucoma](https://github.com/SamuelMarks/ml-glaucoma);
  - [new] 10+ Python repos with ["ml-params" prefix](https://github.com/SamuelMarks?tab=repositories&q=ml-params&language=python):
 
- | Google | Other vendors |
- | -------| ------------- |
+ | Google                                                             | Other vendors                                               |
+ | ------------------------------------------------------------------ | ----------------------------------------------------------- |
  | [tensorflow](https://github.com/SamuelMarks/ml-params-tensorflow)  | [pytorch](https://github.com/SamuelMarks/ml-params-pytorch) |
- | [keras](https://github.com/SamuelMarks/ml-params-keras)  | [skorch](https://github.com/SamuelMarks/ml-params-skorch) |
- | [flax](https://github.com/SamuelMarks/ml-params-flax) | [sklearn](https://github.com/SamuelMarks/ml-params-sklearn) |
- | [trax](https://github.com/SamuelMarks/ml-params-trax) | [xgboost](https://github.com/SamuelMarks/ml-params-xgboost) |
- | [jax](https://github.com/SamuelMarks/ml-params-jax) | [cntk](https://github.com/SamuelMarks/ml-params-cntk) |
+ | [keras](https://github.com/SamuelMarks/ml-params-keras)            | [skorch](https://github.com/SamuelMarks/ml-params-skorch)   |
+ | [flax](https://github.com/SamuelMarks/ml-params-flax)              | [sklearn](https://github.com/SamuelMarks/ml-params-sklearn) |
+ | [trax](https://github.com/SamuelMarks/ml-params-trax)              | [xgboost](https://github.com/SamuelMarks/ml-params-xgboost) |
+ | [jax](https://github.com/SamuelMarks/ml-params-jax)                | [cntk](https://github.com/SamuelMarks/ml-params-cntk)       |
 
 #### Competitive advantage
 
@@ -57,14 +56,14 @@ I write developer tools to speedup engineering of scalable software.
 
 Compilers to automatically translate—within and—between:
 
-| Language             | Compiler |
-| -------------------- | -------- |
-| Python               | [cdd-python](https://github.com/offscale/cdd-python)  |
-| C                    | [cdd-c](https://github.com/SamuelMarks/cdd-c)  |
-| Kotlin (Android)     | [cdd-kotlin](https://github.com/offscale/cdd-kotlin) |
+| Language             | Compiler                                               |
+| -------------------- | ------------------------------------------------------ |
+| Python               | [cdd-python](https://github.com/offscale/cdd-python)   |
+| C                    | [cdd-c](https://github.com/SamuelMarks/cdd-c)          |
+| Kotlin (Android)     | [cdd-kotlin](https://github.com/offscale/cdd-kotlin)   |
 | Swift (iOS)          | [cdd-swift](https://github.com/offscale/cdd-swift-ios) |
-| TypeScript (Angular) | [cdd-ts-ng](https://github.com/offscale/cdd-ts-ng) |
-| Rust                 | [cdd-rust](https://github.com/offscale/cdd-rust) |
+| TypeScript (Angular) | [cdd-ts-ng](https://github.com/offscale/cdd-ts-ng)     |
+| Rust                 | [cdd-rust](https://github.com/offscale/cdd-rust)       |
 
 #### Competitive advantage
 

@@ -60,6 +60,7 @@ Compilers to automatically translate—within and—between:
 | -------------------- | ------------------------------------------------------ |
 | Python               | [cdd-python](https://github.com/offscale/cdd-python)   |
 | C                    | [cdd-c](https://github.com/SamuelMarks/cdd-c)          |
+| Java (Android)       | [cdd-java](https://github.com/offscale/cdd-java)       |
 | Kotlin (Android)     | [cdd-kotlin](https://github.com/offscale/cdd-kotlin)   |
 | Swift (iOS)          | [cdd-swift](https://github.com/offscale/cdd-swift-ios) |
 | TypeScript (Angular) | [cdd-ts-ng](https://github.com/offscale/cdd-ts-ng)     |

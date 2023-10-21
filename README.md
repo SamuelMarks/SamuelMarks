@@ -5,8 +5,11 @@ I write open-source developer tools to speedup engineering of scalable software.
 ### Deploy at any scale
 *From one [e.g., embedded] device to 10,000 servers:*
  - [old] 59+ Python repos with ["off" prefix](https://github.com/offscale?q=off&language=python);
- - [new] C89 repo to create custom [very] cross-platform package managers: [libacquire](https://github.com/offscale/libacquire);
- - [new] ["version_" prefix](https://github.com/offscale?q=version_&language=c) C89 repos that use libacquire to create [rvm](https://rvm.io)/[nvm](https://github.com/nvm-sh/nvm) style cross-platform package managers; and [one in Go for PostgreSQL](https://github.com/offscale/postgres-version-manager-go)
+ - [new] cross-platform [very] cross-platform package managers:
+   - C89 base depending on each OS's crypto and network lib [libacquire](https://github.com/offscale/libacquire);
+   - [rvm](https://rvm.io)/[nvm](https://github.com/nvm-sh/nvm) style cross-platform package managers
+      - [postgres-version-manager-go](https://github.com/offscale/postgres-version-manager-go) in Go
+      - ["version-manager-rs" suffixed](https://github.com/orgs/offscale/repositories?q=-version-manager-rs&language=rust) Rust crates
 
 | Purpose                                                                  | Repo                                                   |
 | ------------------------------------------------------------------------ | ------------------------------------------------------ |

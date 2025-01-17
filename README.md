@@ -1,6 +1,6 @@
 I write open-source developer tools to speedup engineering of scalable software. Foci on: cross-platform, multi-ML, multicloud, and compilers to translate across codebases.
 
-![SamuelMarks](https://github-readme-streak-stats.herokuapp.com/?user=SamuelMarks)
+![SamuelMarks](https://streak-stats.demolab.com/?user=SamuelMarks)
 
 ### Deploy at any scale
 *From one [e.g., embedded] device to 10,000 servers:*

@@ -10,7 +10,7 @@ I write open-source developer tools to speedup engineering of scalable software.
    - [rvm](https://rvm.io)/[nvm](https://github.com/nvm-sh/nvm) style cross-platform package managers:
       - [postgres-version-manager-go](https://github.com/offscale/postgres-version-manager-go) in Go;
       - ["version-manager-rs" suffixed](https://github.com/orgs/offscale/repositories?q=-version-manager-rs&language=rust) and [verman-schema-rs](https://github.com/verman-io/verman-schema-rs) Rust crates.
- - [verMan.io](https://verMan.io) for 1-click deploys: any {ML,database,server}; any {cloud,VM,docker,machine}; from/to any OS.
+ - [new] [verMan.io](https://verMan.io) for 1-click deploys: any {ML,database,server}; any {cloud,VM,docker,machine}; from/to any OS.
 
 | Purpose                                                                  | Repo                                                   |
 | ------------------------------------------------------------------------ | ------------------------------------------------------ |

@@ -1,4 +1,4 @@
-I write open-source developer tools to speedup engineering of scalable software. Foci on: cross-platform, multi-ML, multicloud, and compilers to translate across codebases.
+I write open-source developer tools to speedup engineering of scalable software. [`#rewriteInC`](https://verMan.io). Foci on: cross-platform, [multi-ML](https://kitchenSink.ai), [multicloud](https://verMan.io), and compilers to translate across codebases.
 
 ![SamuelMarks](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks)
 

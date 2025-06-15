@@ -1,4 +1,4 @@
-I write open-source developer tools to speedup engineering of scalable software. [`#rewriteInC`](https://rewriteInC.io). Foci on: cross-platform, [multi-ML](https://kitchenSink.ai), [multicloud](https://verMan.io), and compilers to translate across codebases.
+I write open-source developer tools to speedup engineering of scalable software. [`#rewriteInC`](https://rewriteInC.io). Foci on: [cross-platform multicloud](https://verMan.io), [multi-ML](https://kitchenSink.ai), and compilers ([python](https://github.com/offscale/cdd-python); [C](https://github.com/SamuelMarks/cdd-c); …) to translate types across—and within—codebases.
 
 ![SamuelMarks](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks)
 

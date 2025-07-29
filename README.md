@@ -2,6 +2,43 @@ I write open-source developer tools to speedup engineering of scalable software.
 
 ![SamuelMarks](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks)
 
+Graphically, I maintain a [cross-platform multicloud Docker-optional 1-click deployment platform](https://verMan.io) and engineer new compilers to: [keep languages in-sync](https://compilers.com.au); [make ML libraries the search-space](https://kitchenSink.ai); and [generate C SDKs + wrap them for dozens of languages](https://rewriteInC.io):
+
+```mermaid
+graph TD
+    subgraph Deployment
+        cloud("Cloud (AWS; Azure; Google; ...)")
+        native("Native (Windows; Linux; UNIX; ...)")
+        vm("VMs; Docker; …")
+        wasm("WASM")
+    end
+
+    subgraph ML
+        ml_python("Python compiler")
+    end
+```
+
+```mermaid
+graph TD
+    subgraph Frontend
+        android["Android (Kotlin [KMP])"]
+        ios("iOS (Swift / KMP)")
+        desktop("Desktop (KMP)")
+        web("Web (KMP)")
+        cli("CLI")
+        sdk("SDK (C)")
+    end
+
+    subgraph Backend
+        c("C")
+        python("Python")
+        rust("Rust")
+        typescript("TypeScript")
+    end
+
+    Backend <-->|OpenAPI compilers| Frontend
+```
+
 ### Deploy at any scale
 *From one [e.g., embedded] device to 10,000 servers:*
  - [old] 59+ Python repos with ["off" prefix](https://github.com/offscale?q=off&language=python);

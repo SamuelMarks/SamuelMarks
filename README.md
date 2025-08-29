@@ -1,4 +1,4 @@
-I write open-source developer tools to speedup engineering of scalable software. [`#rewriteInC`](https://rewriteInC.io). Foci on: [cross-platform multicloud](https://verMan.io), [multi-ML](https://kitchenSink.ai), and compilers ([python](https://github.com/offscale/cdd-python); [C](https://github.com/SamuelMarks/cdd-c); …) to translate types across—and within—codebases. Recently I started an open-source SaaS code-quality checker and historical analyser at [crawlcomply.com](https://crawlcomply.com).
+I write open-source developer tools to speedup engineering of scalable software. [`#rewriteInC`](https://rewriteInC.io). Foci on: [cross-platform multicloud](https://verMan.io), [multi-ML](https://kitchenSink.ai), and compilers ([python](https://github.com/offscale/cdd-python); [C](https://github.com/SamuelMarks/cdd-c); …) to translate types across—and within—codebases. Recently I started an open-source SaaS code-quality checker (linting, coverage, etc.) and historical analyser at [crawlcomply.com](https://crawlcomply.com).
 
 ![SamuelMarks](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks)
 

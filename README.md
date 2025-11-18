@@ -95,9 +95,10 @@ This toolkit uses lightweight, purpose-built _package managers_ for direct and e
 *   **Core Managers**: `rvm`/`nvm`-style _package managers_ written in [Go](https://github.com/offscale/postgres-version-manager-go), [Rust](https://github.com/orgs/offscale/repositories?q=-version-manager-rs), and [C](https://github.com/offscale/libacquire) for consistent cross-platform dependency and version management.
 *   **Orchestration Layer**: A mature Python toolkit that uses the core managers to automate deployments across 50+ cloud providers.
 
-| Purpose                                             | Python Repository                                                                   |
-| --------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Provision nodes across 50+ cloud providers          | [offstrategy](https://github.com/offscale/offstrategy)                              |
-| Manage existing nodes (Bring Your Own Node)         | [offset](https://github.com/offscale/offset)                                        |
-| Deploy 50+ software packages to any node            | [offregister](https://github.com/orgs/offscale/repositories?q=offregister-&language=python) |
-| SSH into and deprovision nodes                      | [offshell](https://github.com/offscale/offshell) & [offswitch](https://github.com/offscale/offswitch) |
+| Purpose                                                                  | Repo                                                   |
+| ------------------------------------------------------------------------ | ------------------------------------------------------ |
+| Provision nodes specified in JSON, across 50+ clouds                     | [offstrategy](https://github.com/offscale/offstrategy) |
+| SSH into node provisioned by offstrategy\|offset                         | [offshell](https://github.com/offscale/offshell)       |
+| Deprovision node provisioned by offstrategy\|offset from cloud providers | [offswitch](https://github.com/offscale/offswitch)     |
+| Bring Your Own Node (BYON) [so can use ↕]                                | [offset](https://github.com/offscale/offset)           |
+| Deploy any of [50 "offregister-" prefixed](https://github.com/orgs/offscale/repositories?q=offregister-&language=python) softwares—including clustered databases—to nodes provisioned by offstrategy\|offset | [offregister](https://github.com/offscale/offregister) |

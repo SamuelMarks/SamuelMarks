@@ -2,16 +2,16 @@ Both scaling source-code and scaling deployments are difficult. They need not be
 
 I build tools for a different philosophy of software engineering… one that rejects the bloated, non-native defaults of the modern stack.
 
- - **Restore Monolithic Velocity**: Polyglot systems—separate backend(s) from frontend(s)—create a "synchronization tax" that kills development speed. My `cdd` compilers automate this away, making multi-language development as fast as a Ruby on Rails or Django. And synchronises tests and docs also; improving software quality.
+ - **Restore Monolithic Velocity**: Polyglot systems—separate backend(s) from frontend(s)—create a "synchronization tax" that kills development speed. My `cdd` compilers automate this away, making multi-language development as fast as a _Ruby on Rails_ or _Django_. And synchronises tests and docs also; improving software quality.
  - **Demystify Deployment**: Software deployment is not as complex as the industry makes it seem. My **[verMan.io](https://verMan.io)** toolchain provides a direct path to reproducible, cross-platform, bare-metal environments, making containers a choice, not a mandate.
  - **Outpace ML Fragmentation**: The pace of ML innovation is relentless. My **[kitchenSink.ai](https://kitchenSink.ai)** compilers treat entire ML frameworks as its search space.
 
 ![SamuelMarks's GitHub stats](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks&card_width=600)
 
 ---
-### Bidirectional Code Synchronization
+### Bidirectional Code Synchronisation
 
-My `cdd` compilers are the engine for restoring monolithic velocity. Each one works **bidirectionally**: you can generate typed code *from* a specification, or derive a specification *from* well-structured code. This keeps your polyglot architecture perfectly synchronized.
+My `cdd` compilers are the engine for restoring monolithic velocity. Each one works **bidirectionally**: you can generate typed code *from* a specification, or derive a specification *from* well-structured code. This keeps your polyglot architecture perfectly synchronised.
 
 ```mermaid
 graph LR

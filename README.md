@@ -1,84 +1,57 @@
-I write open-source developer tools to speedup engineering of scalable software. [`#rewriteInC`](https://rewriteInC.io). Foci on: [cross-platform multicloud](https://verMan.io), [multi-ML](https://kitchenSink.ai), and compilers ([python](https://github.com/offscale/cdd-python); [C](https://github.com/SamuelMarks/cdd-c); …) to translate types across—and within—codebases.
+I build tools for a different philosophy of software engineering… one that rejects the bloated, non-native defaults of the modern stack. My work is guided by three principles:
 
-![SamuelMarks](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks)
+ - **Restore Monolithic Velocity**: Polyglot systems create a "synchronization tax" that kills development speed. My `cdd` compilers automate this away, making multi-language development as fast as a Ruby on Rails or Django. And synchronises tests and docs also; improving software quality.
+ - **Demystify Deployment**: Software deployment is not as complex as the industry makes it seem. My **[verMan.io](https://verMan.io)** toolchain provides a direct path to reproducible, cross-platform, bare-metal environments, making containers a choice, not a mandate.
+ - **Outpace ML Fragmentation**: The pace of ML innovation is relentless. Instead of rewriting models, my **[kitchenSink.ai](https://kitchenSink.ai)** compilers treat entire ML frameworks as its search space.
 
-Graphically, I maintain a [cross-platform multicloud Docker-optional 1-click deployment platform](https://verMan.io) and engineer new compilers to: [keep languages in-sync](https://compilers.com.au); [make ML libraries the search-space](https://kitchenSink.ai); and [generate C SDKs + wrap them for dozens of languages](https://rewriteInC.io):
+![SamuelMarks's GitHub stats](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks&card_width=600)
 
-```mermaid
-graph TD
-    subgraph Deployment
-        cloud("Cloud (AWS; Azure; Google; ...)")
-        native("Native (Windows; Linux; UNIX; ...)")
-        vm("VMs; Docker; …")
-        wasm("WASM")
-    end
+---
+### Bidirectional Code Synchronization
 
-    subgraph ML
-        ml_python("Python compiler")
-    end
-```
+My `cdd` compilers are the engine for restoring monolithic velocity. Each one works **bidirectionally**: you can generate typed code *from* a specification, or derive a specification *from* well-structured code. This keeps your polyglot architecture perfectly synchronized.
 
 ```mermaid
-graph TD
-    subgraph Frontend
-        android["Android (Kotlin [KMP])"]
-        ios("iOS (Swift / KMP)")
-        desktop("Desktop (KMP)")
-        web("Web (KMP)")
-        cli("CLI")
-        sdk("SDK (C)")
+graph LR
+    subgraph "A. Compilers"
+        PyComp["cdd-python"]:::blue
+        RsComp["cdd-rust"]:::red
+        CComp["cdd-c"]:::yellow
+        KtComp["cdd-kotlin"]:::green
+        EtcComp["..."]
     end
 
-    subgraph Backend
-        c("C")
-        python("Python")
-        rust("Rust")
-        typescript("TypeScript")
+    subgraph "B. Specification"
+        OpenAPI["<b>Shared Spec</b><br>(OpenAPI)"]:::navy
     end
+    
+    PyComp <-- "to/from spec" --> OpenAPI
+    RsComp <-- "to/from spec" --> OpenAPI
+    CComp <-- "to/from spec" --> OpenAPI
+    KtComp <-- "to/from spec" --> OpenAPI
 
-    Backend <-->|OpenAPI compilers| Frontend
+    %% Styling
+    classDef blue fill:#4285f4,stroke:#20344b,stroke-width:2px,color:#ffffff
+    classDef green fill:#34a853,stroke:#20344b,stroke-width:2px,color:#ffffff
+    classDef yellow fill:#f9ab00,stroke:#20344b,stroke-width:2px,color:#ffffff
+    classDef red fill:#ea4335,stroke:#20344b,stroke-width:2px,color:#ffffff
+    classDef navy fill:#20344b,stroke:#a0a0a0,stroke-width:1px,color:#ffffff
 ```
 
-### Deploy at any scale
-*From one [e.g., embedded] device to 10,000 servers:*
- - [old] 59+ Python repos with ["off" prefix](https://github.com/offscale?q=off&language=python);
- - [new] cross-platform [very] cross-platform package managers:
-   - C89 base depending on each OS's crypto and network lib [libacquire](https://github.com/offscale/libacquire);
-   - [rvm](https://rvm.io)/[nvm](https://github.com/nvm-sh/nvm) style cross-platform package managers:
-      - [postgres-version-manager-go](https://github.com/offscale/postgres-version-manager-go) in Go;
-      - ["version-manager-rs" suffixed](https://github.com/orgs/offscale/repositories?q=-version-manager-rs&language=rust) and [verman-schema-rs](https://github.com/verman-io/verman-schema-rs) Rust crates.
- - [new] [verMan.io](https://verMan.io) for 1-click deploys: any {ML,database,server}; any {cloud,VM,docker,machine}; from/to any OS.
+This toolkit eliminates boilerplate for data models, API clients, and tests, enabling maximum code reuse while demanding truly native performance.
 
-| Purpose                                                                  | Repo                                                   |
-| ------------------------------------------------------------------------ | ------------------------------------------------------ |
-| Provision nodes specified in JSON, across 50+ clouds                     | [offstrategy](https://github.com/offscale/offstrategy) |
-| SSH into node provisioned by offstrategy\|offset                         | [offshell](https://github.com/offscale/offshell)       |
-| Deprovision node provisioned by offstrategy\|offset from cloud providers | [offswitch](https://github.com/offscale/offswitch)     |
-| Bring Your Own Node (BYON) [so can use ↕]                                | [offset](https://github.com/offscale/offset)           |
-| Deploy any of [50 "offregister-" prefixed](https://github.com/orgs/offscale/repositories?q=offregister-&language=python) softwares—including clustered databases—to nodes provisioned by offstrategy\|offset | [offregister](https://github.com/offscale/offregister) |
+| Language             | Native Compiler Repository                                   |
+| -------------------- | ------------------------------------------------------------ |
+| Python               | [cdd-python](https://github.com/offscale/cdd-python)         |
+| C                    | [cdd-c](https://github.com/SamuelMarks/cdd-c)                |
+| Rust                 | [cdd-rust](https://github.com/offscale/cdd-rust)             |
+| Java (Android)       | [cdd-java](https://github.com/offscale/cdd-java)             |
+| Kotlin (Android)     | [cdd-kotlin](https://github.com/offscale/cdd-kotlin)         |
+| Swift (iOS)          | [cdd-swift](https://github.com/offscale/cdd-swift-ios)       |
+| TypeScript (Angular) | [cdd-web-ng](https://github.com/offscale/cdd-web-ng)         |
 
-#### Competitive advantage
-
-  - Support for more cloud vendors;
-  - Uses normal Python packages deployable to PyPi, as opposed to Puppet/Chef/Ansible with their custom systems;
-  - [WiP] Deploy to any operating system (cross-platform: SunOS, Windows, Linux, macOS, OpenBSD);
-  - [WiP] Experiment with different versions of each package, including clustered variants.
-
-### Multicloud
-*From one cloud vendor to many:*
- - [old] See aforementioned [Apache Libcloud](https://libcloud.apache.org) and [Fabric](https://fabfile.org) utilising Python repos;
- - [new] C89 [google-cloud-c](https://github.com/offscale/google-cloud-c) library (soon: auto-generate entire library, and other vendors);
- - [planned] autogenerate vendors other than Google Cloud.
-
-#### Competitive advantage
-
-  - [C89] Can be called from most any programming language and runs in all environments;
-  - [planned] Build specific abstractions for multicloud, like: container-as-a-Service; ML-as-a-Service; Storage-as-a-Service; &etc.
-
-### Multi-ML
-*From one machine-learning framework to many:*
- - [old] Python repo from my first PhD: [ml-glaucoma](https://github.com/SamuelMarks/ml-glaucoma);
- - [new] 10+ Python repos with ["ml-params" prefix](https://github.com/SamuelMarks?tab=repositories&q=ml-params&language=python):
+**Application: Outpacing ML**
+The `cdd-python` compiler powers the [kitchenSink.ai](https://kitchenSink.ai) project, which translates models between frameworks.
 
  | Google                                                             | Other vendors                                               |
  | ------------------------------------------------------------------ | ----------------------------------------------------------- |
@@ -88,27 +61,41 @@ graph TD
  | [trax](https://github.com/SamuelMarks/ml-params-trax)              | [xgboost](https://github.com/SamuelMarks/ml-params-xgboost) |
  | [jax](https://github.com/SamuelMarks/ml-params-jax)                | [cntk](https://github.com/SamuelMarks/ml-params-cntk)       |
 
-#### Competitive advantage
+---
+### Demystifying Deployment
 
-  - Keep up-to-date with latest innovations without porting to favourite framework;
-  - Experiment with every model on all major Python ML frameworks.
+Applications, databases, and ML can be deployed by simply with **[verMan.io](https://verMan.io)**—my answer to the heavyweight, container-first paradigm. You can still use this within containers, but you are not limited to non-native abstractions like Docker.
 
-### Native development, cross-platform, without tradeoffs
+```mermaid
+graph TD
+    subgraph "Engine: verMan.io"
+        Mgrs["<b>Polyglot Version Managers</b><br>in Go, Rust, C"]:::blue
+    end
 
-Compilers to automatically translate—within and—between:
+    subgraph "Targets"
+        Cloud("Cloud VMs"):::yellow
+        Native("Bare Metal<br>Win, Linux, BSD..."):::yellow
+        Local("Docker / Local"):::yellow
+    end
 
-| Language             | Compiler                                               |
-| -------------------- | ------------------------------------------------------ |
-| Python               | [cdd-python](https://github.com/offscale/cdd-python)   |
-| C                    | [cdd-c](https://github.com/SamuelMarks/cdd-c)          |
-| Java (Android)       | [cdd-java](https://github.com/offscale/cdd-java)       |
-| Kotlin (Android)     | [cdd-kotlin](https://github.com/offscale/cdd-kotlin)   |
-| Swift (iOS)          | [cdd-swift](https://github.com/offscale/cdd-swift-ios) |
-| TypeScript (Angular) | [cdd-web-ng](https://github.com/offscale/cdd-web-ng)   |
-| Rust                 | [cdd-rust](https://github.com/offscale/cdd-rust)       |
+    Mgrs -- "deploys to" --> Cloud
+    Mgrs -- "deploys to" --> Native
+    Mgrs -- "deploys to" --> Local
 
-#### Competitive advantage
+    %% Styling
+    classDef blue fill:#4285f4,stroke:#20344b,stroke-width:2px,color:#ffffff
+    classDef yellow fill:#f9ab00,stroke:#20344b,stroke-width:2px,color:#ffffff
+    classDef navy fill:#20344b,stroke:#a0a0a0,stroke-width:1px,color:#ffffff
+```
 
-  - [intra-language] Automatically synchronise tests (& mocks), docs, types & interfaces;
-  - [exolanguage] Translate changes across language boundaries;
-  - Develop multi-language applications—e.g., Android, iOS, web, backend—as fast as single-language applications (compare with: Django or Ruby on Rails) and at a higher quality thanks to increased consistency, test coverage and doc coverage.
+This toolkit uses lightweight, purpose-built _package managers_ for direct and efficient deployment. These work with or without Docker, Kubernetes, etc.
+
+*   **Core Managers**: `rvm`/`nvm`-style _package managers_ written in [Go](https://github.com/offscale/postgres-version-manager-go), [Rust](https://github.com/orgs/offscale/repositories?q=-version-manager-rs), and [C](https://github.com/offscale/libacquire) for consistent cross-platform dependency and version management.
+*   **Orchestration Layer**: A mature Python toolkit that uses the core managers to automate deployments across 50+ cloud providers.
+
+| Purpose                                             | Python Repository                                                                   |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Provision nodes across 50+ cloud providers          | [offstrategy](https://github.com/offscale/offstrategy)                              |
+| Manage existing nodes (Bring Your Own Node)         | [offset](https://github.com/offscale/offset)                                        |
+| Deploy 50+ software packages to any node            | [offregister](https://github.com/orgs/offscale/repositories?q=offregister-&language=python) |
+| SSH into and deprovision nodes                      | [offshell](https://github.com/offscale/offshell) & [offswitch](https://github.com/offscale/offswitch) |

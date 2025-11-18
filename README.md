@@ -1,3 +1,5 @@
+Both scaling source-code and scaling deployments are difficult. They need not be.
+
 I build tools for a different philosophy of software engineering… one that rejects the bloated, non-native defaults of the modern stack.
 
  - **Restore Monolithic Velocity**: Polyglot systems create a "synchronization tax" that kills development speed. My `cdd` compilers automate this away, making multi-language development as fast as a Ruby on Rails or Django. And synchronises tests and docs also; improving software quality.

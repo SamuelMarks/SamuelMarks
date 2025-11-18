@@ -1,4 +1,4 @@
-I build tools for a different philosophy of software engineering… one that rejects the bloated, non-native defaults of the modern stack. My work is guided by three principles:
+I build tools for a different philosophy of software engineering… one that rejects the bloated, non-native defaults of the modern stack.
 
  - **Restore Monolithic Velocity**: Polyglot systems create a "synchronization tax" that kills development speed. My `cdd` compilers automate this away, making multi-language development as fast as a Ruby on Rails or Django. And synchronises tests and docs also; improving software quality.
  - **Demystify Deployment**: Software deployment is not as complex as the industry makes it seem. My **[verMan.io](https://verMan.io)** toolchain provides a direct path to reproducible, cross-platform, bare-metal environments, making containers a choice, not a mandate.
@@ -68,19 +68,19 @@ Applications, databases, and ML can be deployed by simply with **[verMan.io](htt
 
 ```mermaid
 graph TD
-    subgraph "Engine: verMan.io"
-        Mgrs["<b>Polyglot Version Managers</b><br>in Go, Rust, C"]:::blue
+    subgraph " "
+        Mgrs["<b>Polyglot Version Managers</b><br>Go | Rust | C | Shell"]:::blue
     end
 
-    subgraph "Targets"
+    subgraph " "
         Cloud("Cloud VMs"):::yellow
         Native("Bare Metal<br>Win, Linux, BSD..."):::yellow
-        Local("Docker / Local"):::yellow
+        Docker("Docker"):::yellow
     end
 
-    Mgrs -- "deploys to" --> Cloud
-    Mgrs -- "deploys to" --> Native
-    Mgrs -- "deploys to" --> Local
+    Mgrs --> Cloud
+    Mgrs --> Native
+    Mgrs --> Docker
 
     %% Styling
     classDef blue fill:#4285f4,stroke:#20344b,stroke-width:2px,color:#ffffff

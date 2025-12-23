@@ -4,7 +4,7 @@ I build tools for a different philosophy of software engineering… one that rej
 
  - **Restore Monolithic Velocity**: Polyglot systems—separate backend(s) from frontend(s)—create a "synchronisation tax" that kills development speed. My `cdd` compilers automate this away, making multi-language development as fast as a _Ruby on Rails_ or _Django_. And synchronises tests and docs also; improving software quality.
  - **Demystify Deployment**: Software deployment is not as complex as the industry makes it seem. My **[verMan.io](https://verMan.io)** toolchain provides a direct path to reproducible, cross-platform, bare-metal environments, making containers a choice, not a mandate.
- - **Outpace ML Fragmentation**: The pace of ML innovation is relentless. My **[kitchenSink.ai](https://kitchenSink.ai)** compilers treat entire ML frameworks as its search space.
+ - **Outpace ML Fragmentation**: The pace of ML innovation is relentless. My **[kitchenSink.ai](https://kitchenSink.ai)** compilers treat entire ML frameworks as its search space. And my [ml-switcheroo](https://samuelmarks.github.io/ml-switcheroo) project translates code betwixt ML frameworks.
 
 ![SamuelMarks's GitHub stats](https://github-readme-streak-stats-eight.vercel.app/?user=SamuelMarks&card_width=600)
 
@@ -53,7 +53,7 @@ This toolkit eliminates boilerplate for data models, API clients | servers route
 | TypeScript (Angular) | [cdd-web-ng](https://github.com/offscale/cdd-web-ng)         |
 
 **Application: Outpacing ML**
-The [`cdd-python`](https://github.com/offscale/cdd-python) compiler powers the [kitchenSink.ai](https://kitchenSink.ai) project, which translates models between frameworks.
+The [`cdd-python`](https://github.com/offscale/cdd-python) compiler powers the [kitchenSink.ai](https://kitchenSink.ai) project. My [ml-switcheroo](https://samuelmarks.github.io/ml-switcheroo) project translates translates models, operations, lifecycles, and general I/O betwixt frameworks.
 
  | Google                                                             | Other vendors                                               |
  | ------------------------------------------------------------------ | ----------------------------------------------------------- |

@@ -1,5 +1,7 @@
 Both scaling source-code and scaling deployments are difficult. They need not be.
 
+TL;DR I engineer new open-source cross-platform alternatives to: Docker ([libscript](https://github.com/SamuelMarks/libscript)); Flutter / Kotlin Multiplatform / React Native ([C multiplatform](https://github.com/SamuelMarks/c-multiplatform)); and specific ML frameworks ([ml-switcheroo](https://github.com/SamuelMarks/ml-switcheroo)).
+
 I build tools for a different philosophy of software engineering… one that rejects the bloated, non-native defaults of the modern stack.
 
  - **Restore Monolithic Velocity**: Polyglot systems—separate backend(s) from frontend(s)—create a "synchronisation tax" that kills development speed. My `cdd` compilers automate this away, making multi-language development as fast as a _Ruby on Rails_ or _Django_. And synchronises tests and docs also; improving software quality.
@@ -57,7 +59,7 @@ This toolkit eliminates boilerplate for data models, API clients | servers route
 | [`cdd-ruby`](https://github.com/SamuelMarks/cdd-ruby) | Ruby | Client; Client CLI; Server |  | OpenAPI 3.2.0 | [![CI](https://github.com/SamuelMarks/cdd-ruby/actions/workflows/ci.yml/badge.svg)](https://github.com/SamuelMarks/cdd-ruby/actions/workflows/ci.yml) |
 | [`cdd-rust`](https://github.com/SamuelMarks/cdd-rust) | Rust | Client; Client CLI; Server |  | OpenAPI 3.2.0 | [![CI](https://github.com/offscale/cdd-rust/actions/workflows/ci-cargo.yml/badge.svg)](https://github.com/offscale/cdd-rust/actions/workflows/ci-cargo.yml) |
 | [`cdd-sh`](https://github.com/SamuelMarks/cdd-sh) | Shell (/bin/sh) | Client; Client CLI; Server |  | OpenAPI 3.2.0 | [![CI](https://github.com/SamuelMarks/cdd-sh/actions/workflows/ci.yml/badge.svg)](https://github.com/SamuelMarks/cdd-sh/actions/workflows/ci.yml) |
-| [`cdd-swift`](https://github.com/offscale/cdd-swift) | Swift | Client; Client CLI; Server |  | OpenAPI 3.2.0 | [![Swift](https://github.com/SamuelMarks/cdd-swift/actions/workflows/swift.yml/badge.svg)](https://github.com/SamuelMarks/cdd-swift/actions/workflows/swift.yml) |
+| [`cdd-swift`](https://github.com/SamuelMarks/cdd-swift) | Swift | Client; Client CLI; Server |  | OpenAPI 3.2.0 | [![Swift](https://github.com/SamuelMarks/cdd-swift/actions/workflows/swift.yml/badge.svg)](https://github.com/SamuelMarks/cdd-swift/actions/workflows/swift.yml) |
 | [`cdd-ts`](https://github.com/offscale/cdd-ts) | TypeScript | Client; Client CLI; Server | Auto-Admin UI; Angular; fetch; Axios; Node.js | OpenAPI 3.2.0 & Swagger 2 | [![Tests and coverage](https://github.com/offscale/cdd-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/offscale/cdd-ts/actions/workflows/ci.yml) |
 
 
